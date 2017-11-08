@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40A26BE71FB285E000FCE0DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26BE61FB285E000FCE0DC /* AppDelegate.swift */; };
+		40A26BE91FB285E000FCE0DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26BE81FB285E000FCE0DC /* ViewController.swift */; };
+		40A26BEC1FB285E000FCE0DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A26BEA1FB285E000FCE0DC /* Main.storyboard */; };
+		40A26BEE1FB285E000FCE0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A26BED1FB285E000FCE0DC /* Assets.xcassets */; };
+		40A26BF11FB285E000FCE0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A26BEF1FB285E000FCE0DC /* LaunchScreen.storyboard */; };
+		40A26BFC1FB285E000FCE0DC /* kelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26BFB1FB285E000FCE0DC /* kelpTests.swift */; };
+		40A26C071FB285E000FCE0DC /* kelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C061FB285E000FCE0DC /* kelpUITests.swift */; };
+		40A26C191FB2874500FCE0DC /* KelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C151FB2874500FCE0DC /* KelpViewController.swift */; };
+		40A26C1A1FB2874500FCE0DC /* KelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C161FB2874500FCE0DC /* KelpTableViewCell.swift */; };
+		40A26C1B1FB2874500FCE0DC /* KelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */; };
+		40A26C1D1FB28DB900FCE0DC /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C1C1FB28DB900FCE0DC /* Fish.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40A26BF81FB285E000FCE0DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A26BDB1FB285E000FCE0DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A26BE21FB285E000FCE0DC;
+			remoteInfo = kelp;
+		};
+		40A26C031FB285E000FCE0DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A26BDB1FB285E000FCE0DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A26BE21FB285E000FCE0DC;
+			remoteInfo = kelp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40A26BE31FB285E000FCE0DC /* kelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A26BE61FB285E000FCE0DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40A26BE81FB285E000FCE0DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40A26BEB1FB285E000FCE0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40A26BED1FB285E000FCE0DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40A26BF01FB285E000FCE0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40A26BF21FB285E000FCE0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A26BF71FB285E000FCE0DC /* kelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A26BFB1FB285E000FCE0DC /* kelpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kelpTests.swift; sourceTree = "<group>"; };
+		40A26BFD1FB285E000FCE0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A26C021FB285E000FCE0DC /* kelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kelpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A26C061FB285E000FCE0DC /* kelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kelpUITests.swift; sourceTree = "<group>"; };
+		40A26C081FB285E000FCE0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A26C151FB2874500FCE0DC /* KelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KelpViewController.swift; sourceTree = "<group>"; };
+		40A26C161FB2874500FCE0DC /* KelpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KelpTableViewCell.swift; sourceTree = "<group>"; };
+		40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KelpTableViewController.swift; sourceTree = "<group>"; };
+		40A26C1C1FB28DB900FCE0DC /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A26BE01FB285E000FCE0DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A26BF41FB285E000FCE0DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A26BFF1FB285E000FCE0DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A26BDA1FB285E000FCE0DC = {
+			isa = PBXGroup;
+			children = (
+				40A26BE51FB285E000FCE0DC /* kelp */,
+				40A26BFA1FB285E000FCE0DC /* kelpTests */,
+				40A26C051FB285E000FCE0DC /* kelpUITests */,
+				40A26BE41FB285E000FCE0DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40A26BE41FB285E000FCE0DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40A26BE31FB285E000FCE0DC /* kelp.app */,
+				40A26BF71FB285E000FCE0DC /* kelpTests.xctest */,
+				40A26C021FB285E000FCE0DC /* kelpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40A26BE51FB285E000FCE0DC /* kelp */ = {
+			isa = PBXGroup;
+			children = (
+				40A26C1C1FB28DB900FCE0DC /* Fish.swift */,
+				40A26C161FB2874500FCE0DC /* KelpTableViewCell.swift */,
+				40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */,
+				40A26C151FB2874500FCE0DC /* KelpViewController.swift */,
+				40A26BE61FB285E000FCE0DC /* AppDelegate.swift */,
+				40A26BE81FB285E000FCE0DC /* ViewController.swift */,
+				40A26BEA1FB285E000FCE0DC /* Main.storyboard */,
+				40A26BED1FB285E000FCE0DC /* Assets.xcassets */,
+				40A26BEF1FB285E000FCE0DC /* LaunchScreen.storyboard */,
+				40A26BF21FB285E000FCE0DC /* Info.plist */,
+			);
+			path = kelp;
+			sourceTree = "<group>";
+		};
+		40A26BFA1FB285E000FCE0DC /* kelpTests */ = {
+			isa = PBXGroup;
+			children = (
+				40A26BFB1FB285E000FCE0DC /* kelpTests.swift */,
+				40A26BFD1FB285E000FCE0DC /* Info.plist */,
+			);
+			path = kelpTests;
+			sourceTree = "<group>";
+		};
+		40A26C051FB285E000FCE0DC /* kelpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40A26C061FB285E000FCE0DC /* kelpUITests.swift */,
+				40A26C081FB285E000FCE0DC /* Info.plist */,
+			);
+			path = kelpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40A26BE21FB285E000FCE0DC /* kelp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A26C0B1FB285E000FCE0DC /* Build configuration list for PBXNativeTarget "kelp" */;
+			buildPhases = (
+				40A26BDF1FB285E000FCE0DC /* Sources */,
+				40A26BE01FB285E000FCE0DC /* Frameworks */,
+				40A26BE11FB285E000FCE0DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kelp;
+			productName = kelp;
+			productReference = 40A26BE31FB285E000FCE0DC /* kelp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40A26BF61FB285E000FCE0DC /* kelpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A26C0E1FB285E000FCE0DC /* Build configuration list for PBXNativeTarget "kelpTests" */;
+			buildPhases = (
+				40A26BF31FB285E000FCE0DC /* Sources */,
+				40A26BF41FB285E000FCE0DC /* Frameworks */,
+				40A26BF51FB285E000FCE0DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40A26BF91FB285E000FCE0DC /* PBXTargetDependency */,
+			);
+			name = kelpTests;
+			productName = kelpTests;
+			productReference = 40A26BF71FB285E000FCE0DC /* kelpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40A26C011FB285E000FCE0DC /* kelpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A26C111FB285E000FCE0DC /* Build configuration list for PBXNativeTarget "kelpUITests" */;
+			buildPhases = (
+				40A26BFE1FB285E000FCE0DC /* Sources */,
+				40A26BFF1FB285E000FCE0DC /* Frameworks */,
+				40A26C001FB285E000FCE0DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40A26C041FB285E000FCE0DC /* PBXTargetDependency */,
+			);
+			name = kelpUITests;
+			productName = kelpUITests;
+			productReference = 40A26C021FB285E000FCE0DC /* kelpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40A26BDB1FB285E000FCE0DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Jacque DesMarais";
+				TargetAttributes = {
+					40A26BE21FB285E000FCE0DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					40A26BF61FB285E000FCE0DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40A26BE21FB285E000FCE0DC;
+					};
+					40A26C011FB285E000FCE0DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40A26BE21FB285E000FCE0DC;
+					};
+				};
+			};
+			buildConfigurationList = 40A26BDE1FB285E000FCE0DC /* Build configuration list for PBXProject "kelp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40A26BDA1FB285E000FCE0DC;
+			productRefGroup = 40A26BE41FB285E000FCE0DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A26BE21FB285E000FCE0DC /* kelp */,
+				40A26BF61FB285E000FCE0DC /* kelpTests */,
+				40A26C011FB285E000FCE0DC /* kelpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40A26BE11FB285E000FCE0DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A26BF11FB285E000FCE0DC /* LaunchScreen.storyboard in Resources */,
+				40A26BEE1FB285E000FCE0DC /* Assets.xcassets in Resources */,
+				40A26BEC1FB285E000FCE0DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A26BF51FB285E000FCE0DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A26C001FB285E000FCE0DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40A26BDF1FB285E000FCE0DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A26BE91FB285E000FCE0DC /* ViewController.swift in Sources */,
+				40A26C1A1FB2874500FCE0DC /* KelpTableViewCell.swift in Sources */,
+				40A26C1D1FB28DB900FCE0DC /* Fish.swift in Sources */,
+				40A26C1B1FB2874500FCE0DC /* KelpTableViewController.swift in Sources */,
+				40A26C191FB2874500FCE0DC /* KelpViewController.swift in Sources */,
+				40A26BE71FB285E000FCE0DC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A26BF31FB285E000FCE0DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A26BFC1FB285E000FCE0DC /* kelpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A26BFE1FB285E000FCE0DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A26C071FB285E000FCE0DC /* kelpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40A26BF91FB285E000FCE0DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40A26BE21FB285E000FCE0DC /* kelp */;
+			targetProxy = 40A26BF81FB285E000FCE0DC /* PBXContainerItemProxy */;
+		};
+		40A26C041FB285E000FCE0DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40A26BE21FB285E000FCE0DC /* kelp */;
+			targetProxy = 40A26C031FB285E000FCE0DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40A26BEA1FB285E000FCE0DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A26BEB1FB285E000FCE0DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40A26BEF1FB285E000FCE0DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A26BF01FB285E000FCE0DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40A26C091FB285E000FCE0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40A26C0A1FB285E000FCE0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40A26C0C1FB285E000FCE0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = kelp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40A26C0D1FB285E000FCE0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = kelp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40A26C0F1FB285E000FCE0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = kelpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kelp.app/kelp";
+			};
+			name = Debug;
+		};
+		40A26C101FB285E000FCE0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = kelpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kelp.app/kelp";
+			};
+			name = Release;
+		};
+		40A26C121FB285E000FCE0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = kelpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kelp;
+			};
+			name = Debug;
+		};
+		40A26C131FB285E000FCE0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = kelpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kelp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40A26BDE1FB285E000FCE0DC /* Build configuration list for PBXProject "kelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A26C091FB285E000FCE0DC /* Debug */,
+				40A26C0A1FB285E000FCE0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A26C0B1FB285E000FCE0DC /* Build configuration list for PBXNativeTarget "kelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A26C0C1FB285E000FCE0DC /* Debug */,
+				40A26C0D1FB285E000FCE0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A26C0E1FB285E000FCE0DC /* Build configuration list for PBXNativeTarget "kelpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A26C0F1FB285E000FCE0DC /* Debug */,
+				40A26C101FB285E000FCE0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A26C111FB285E000FCE0DC /* Build configuration list for PBXNativeTarget "kelpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A26C121FB285E000FCE0DC /* Debug */,
+				40A26C131FB285E000FCE0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40A26BDB1FB285E000FCE0DC /* Project object */;
+}
