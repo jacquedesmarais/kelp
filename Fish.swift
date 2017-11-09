@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import os.log
 
 class Fish: NSObject, NSCoding {
     

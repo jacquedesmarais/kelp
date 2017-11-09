@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class KelpTableViewController: UITableViewController {
     
@@ -21,9 +22,10 @@ class KelpTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
         
         // Load any saved meals, otherwise load sample data
-//        if let savedMeals = loadMeals() {
-//            meals += savedMeals
-//        } else {
+        if let savedFishes = loadFishes() {
+            fishes += savedFishes
+        }
+//        else {
 //
 //        // Load the sample data
 //        loadSampleMeals()
@@ -95,7 +97,7 @@ class KelpTableViewController: UITableViewController {
             saveFishes()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
 
@@ -119,7 +121,7 @@ class KelpTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Show Detail" {
+        if segue.identifier == "ShowDetail" {
         let fishDetailViewController = segue.destination as!
             KelpViewController
             // Get the cell that gemerated this segue
@@ -134,7 +136,7 @@ class KelpTableViewController: UITableViewController {
         }
     }
 
-@IBAction func unwindToFishList(sender: UIStoryboardSegue) {
+    @IBAction func unwindToFishList(sender: UIStoryboardSegue) {
     if let sourceViewController = sender.source as?
         KelpViewController, let fish = sourceViewController.fish {
     if let selectedIndexPath = tableView.indexPathsForSelectedRows?.last {
@@ -153,17 +155,17 @@ class KelpTableViewController: UITableViewController {
 }
 
 //     MARK : NSCoding
-    func saveFishes() {
+    private func saveFishes() {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(fishes, toFile: (Fish.ArchiveURL.path))
         if !isSuccessfulSave {
-            print ("Failed to save fish.")
+            os_log("Failed to save fish...", log: OSLog.default, type: .error)
+        } else {
+            os_log("Fish successfully saved.", log: OSLog.default, type: .debug)
         }
     }
-    func loadFishes () -> [Fish]? {
+    private func loadFishes () -> [Fish]? {
         return NSKeyedUnarchiver.unarchiveObject(withFile: (Fish.ArchiveURL.path)) as?
         [Fish]
     }
-    
-    
 }
 

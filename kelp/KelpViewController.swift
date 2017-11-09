@@ -15,10 +15,9 @@ class KelpViewController: UIViewController, UITextFieldDelegate,UIImagePickerCon
     @IBOutlet weak var familyTextField: UITextField!
     @IBOutlet weak var colorTextField: UITextField!
     @IBOutlet weak var aquariumTextField: UITextField!
-    @IBOutlet var saveButton: UIBarButtonItem!
     @IBOutlet weak var fishDescriptionTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
-    
+    @IBOutlet var saveButton: UIBarButtonItem!
     
     /* This value is either passed by 'KelpTableViewController" in 'prepareForSeuge(_:sender:)' or constructed as a part of adding a new fish */
     var fish: Fish?
@@ -35,6 +34,10 @@ class KelpViewController: UIViewController, UITextFieldDelegate,UIImagePickerCon
             navigationItem.title = fish.name
             nameTextField.text = fish.name
             photoImageView.image = fish.photo
+            familyTextField.text = fish.family
+            colorTextField.text = fish.color
+            aquariumTextField.text = fish.aquarium
+            fishDescriptionTextField.text = fish.fishDescription
             
         }
         // Enable the save button only if the text field has a valid fish name

@@ -14,7 +14,7 @@ class KelpTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var familyLabel: UILabel!
-    
+    @IBOutlet weak var colorLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
