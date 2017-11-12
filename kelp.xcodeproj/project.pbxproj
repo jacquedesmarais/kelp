@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40A26BE71FB285E000FCE0DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26BE61FB285E000FCE0DC /* AppDelegate.swift */; };
-		40A26BE91FB285E000FCE0DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26BE81FB285E000FCE0DC /* ViewController.swift */; };
+		40A26BE91FB285E000FCE0DC /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26BE81FB285E000FCE0DC /* FishDetailViewController.swift */; };
 		40A26BEC1FB285E000FCE0DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A26BEA1FB285E000FCE0DC /* Main.storyboard */; };
 		40A26BEE1FB285E000FCE0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A26BED1FB285E000FCE0DC /* Assets.xcassets */; };
 		40A26BF11FB285E000FCE0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A26BEF1FB285E000FCE0DC /* LaunchScreen.storyboard */; };
@@ -18,6 +18,8 @@
 		40A26C1A1FB2874500FCE0DC /* KelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C161FB2874500FCE0DC /* KelpTableViewCell.swift */; };
 		40A26C1B1FB2874500FCE0DC /* KelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */; };
 		40A26C1D1FB28DB900FCE0DC /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C1C1FB28DB900FCE0DC /* Fish.swift */; };
+		40C7B0CC1FB7ADDC00A31A27 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 40C7B0C21FB7ADDC00A31A27 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40C7B0D21FB7E62300A31A27 /* FishDetailStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7B0D11FB7E62300A31A27 /* FishDetailStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +37,33 @@
 			remoteGlobalIDString = 40A26BE21FB285E000FCE0DC;
 			remoteInfo = kelp;
 		};
+		40C7B0CA1FB7ADDC00A31A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A26BDB1FB285E000FCE0DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C7B0C11FB7ADDC00A31A27;
+			remoteInfo = ShareExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40C7B0D01FB7ADDC00A31A27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				40C7B0CC1FB7ADDC00A31A27 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40A26BE31FB285E000FCE0DC /* kelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A26BE61FB285E000FCE0DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40A26BE81FB285E000FCE0DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40A26BE81FB285E000FCE0DC /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
 		40A26BEB1FB285E000FCE0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40A26BED1FB285E000FCE0DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40A26BF01FB285E000FCE0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +78,8 @@
 		40A26C161FB2874500FCE0DC /* KelpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KelpTableViewCell.swift; sourceTree = "<group>"; };
 		40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KelpTableViewController.swift; sourceTree = "<group>"; };
 		40A26C1C1FB28DB900FCE0DC /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = SOURCE_ROOT; };
+		40C7B0C21FB7ADDC00A31A27 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C7B0D11FB7E62300A31A27 /* FishDetailStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +98,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		40A26BFF1FB285E000FCE0DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C7B0BF1FB7ADDC00A31A27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,6 +130,7 @@
 				40A26BE31FB285E000FCE0DC /* kelp.app */,
 				40A26BF71FB285E000FCE0DC /* kelpTests.xctest */,
 				40A26C021FB285E000FCE0DC /* kelpUITests.xctest */,
+				40C7B0C21FB7ADDC00A31A27 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +143,8 @@
 				40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */,
 				40A26C151FB2874500FCE0DC /* KelpViewController.swift */,
 				40A26BE61FB285E000FCE0DC /* AppDelegate.swift */,
-				40A26BE81FB285E000FCE0DC /* ViewController.swift */,
+				40A26BE81FB285E000FCE0DC /* FishDetailViewController.swift */,
+				40C7B0D11FB7E62300A31A27 /* FishDetailStackView.swift */,
 				40A26BEA1FB285E000FCE0DC /* Main.storyboard */,
 				40A26BED1FB285E000FCE0DC /* Assets.xcassets */,
 				40A26BEF1FB285E000FCE0DC /* LaunchScreen.storyboard */,
@@ -147,10 +181,12 @@
 				40A26BDF1FB285E000FCE0DC /* Sources */,
 				40A26BE01FB285E000FCE0DC /* Frameworks */,
 				40A26BE11FB285E000FCE0DC /* Resources */,
+				40C7B0D01FB7ADDC00A31A27 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				40C7B0CB1FB7ADDC00A31A27 /* PBXTargetDependency */,
 			);
 			name = kelp;
 			productName = kelp;
@@ -193,6 +229,23 @@
 			productReference = 40A26C021FB285E000FCE0DC /* kelpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		40C7B0C11FB7ADDC00A31A27 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C7B0CD1FB7ADDC00A31A27 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				40C7B0BE1FB7ADDC00A31A27 /* Sources */,
+				40C7B0BF1FB7ADDC00A31A27 /* Frameworks */,
+				40C7B0C01FB7ADDC00A31A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 40C7B0C21FB7ADDC00A31A27 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +270,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 40A26BE21FB285E000FCE0DC;
 					};
+					40C7B0C11FB7ADDC00A31A27 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 40A26BDE1FB285E000FCE0DC /* Build configuration list for PBXProject "kelp" */;
@@ -235,6 +292,7 @@
 				40A26BE21FB285E000FCE0DC /* kelp */,
 				40A26BF61FB285E000FCE0DC /* kelpTests */,
 				40A26C011FB285E000FCE0DC /* kelpUITests */,
+				40C7B0C11FB7ADDC00A31A27 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +322,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40C7B0C01FB7ADDC00A31A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -271,10 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A26BE91FB285E000FCE0DC /* ViewController.swift in Sources */,
+				40A26BE91FB285E000FCE0DC /* FishDetailViewController.swift in Sources */,
 				40A26C1A1FB2874500FCE0DC /* KelpTableViewCell.swift in Sources */,
 				40A26C1D1FB28DB900FCE0DC /* Fish.swift in Sources */,
 				40A26C1B1FB2874500FCE0DC /* KelpTableViewController.swift in Sources */,
+				40C7B0D21FB7E62300A31A27 /* FishDetailStackView.swift in Sources */,
 				40A26C191FB2874500FCE0DC /* KelpViewController.swift in Sources */,
 				40A26BE71FB285E000FCE0DC /* AppDelegate.swift in Sources */,
 			);
@@ -296,6 +362,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40C7B0BE1FB7ADDC00A31A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -308,6 +381,11 @@
 			isa = PBXTargetDependency;
 			target = 40A26BE21FB285E000FCE0DC /* kelp */;
 			targetProxy = 40A26C031FB285E000FCE0DC /* PBXContainerItemProxy */;
+		};
+		40C7B0CB1FB7ADDC00A31A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C7B0C11FB7ADDC00A31A27 /* ShareExtension */;
+			targetProxy = 40C7B0CA1FB7ADDC00A31A27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -534,6 +612,36 @@
 			};
 			name = Release;
 		};
+		40C7B0CE1FB7ADDC00A31A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelp.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40C7B0CF1FB7ADDC00A31A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56RKB75SN;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelp.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,6 +677,15 @@
 			buildConfigurations = (
 				40A26C121FB285E000FCE0DC /* Debug */,
 				40A26C131FB285E000FCE0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C7B0CD1FB7ADDC00A31A27 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C7B0CE1FB7ADDC00A31A27 /* Debug */,
+				40C7B0CF1FB7ADDC00A31A27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

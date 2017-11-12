@@ -21,11 +21,12 @@ class KelpViewController: UIViewController, UITextFieldDelegate,UIImagePickerCon
     
     /* This value is either passed by 'KelpTableViewController" in 'prepareForSeuge(_:sender:)' or constructed as a part of adding a new fish */
     var fish: Fish?
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+               
         // Handle the text fields user imput through delagates callback
         nameTextField.delegate = self
         
