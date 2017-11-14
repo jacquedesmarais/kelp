@@ -10,10 +10,19 @@ import UIKit
 
 class FishDetailViewController: UITableViewController {
     
+    var fish: Fish?
     var fishes = [Fish]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        
+        
+//        if let savedFishes = loadFishes() {
+//            fishes += savedFishes
+//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,24 +38,22 @@ class FishDetailViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return fishes.count
+        return self.fishes.count
     }
-    
+
     // Table view cells are reused and should be dequeued using a cell identifier
     
-    override func stackView(_ tableView: UIStackView, cellForRowAt indexPath: IndexPath) -> UIStackView {
-        let cellIdentifier = "FishDetailStackView"
-        let cell = stackView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FishDetailStackView
-        
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> FishDetailTableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FishDetailTableViewCell", for: indexPath) as! FishDetailTableViewCell
         // Fetches the appropriate fish for the data source layout
         let fish = fishes[indexPath.row]
         
-        cell.nameLabel.text = fish.name
-        cell.familyLabel.text = fish.family
-        cell.colorLabel.text = fish.color
-        cell.aquariumLabel.text = fish.aquarium
-        cell.descriptionLabel.text = fish.description
-        cell.photoImageView.image = fish.photo
+        cell.nameLabel!.text = fish.name
+        cell.familyLabel!.text = fish.family
+        cell.colorLabel!.text = fish.color
+        cell.aquariumLabel!.text = fish.aquarium
+        cell.descriptionLabel!.text = fish.description
+        cell.photoImageView!.image = fish.photo
         
         return cell
     }
@@ -55,7 +62,11 @@ class FishDetailViewController: UITableViewController {
         navigationController! .popViewController(animated: true)
     }
     
-
+    private func loadFishes () -> [Fish]? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: (Fish.ArchiveURL.path)) as?
+            [Fish]
+    }
 }
+
 
 

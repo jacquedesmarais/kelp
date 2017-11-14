@@ -18,8 +18,7 @@
 		40A26C1A1FB2874500FCE0DC /* KelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C161FB2874500FCE0DC /* KelpTableViewCell.swift */; };
 		40A26C1B1FB2874500FCE0DC /* KelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */; };
 		40A26C1D1FB28DB900FCE0DC /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A26C1C1FB28DB900FCE0DC /* Fish.swift */; };
-		40C7B0CC1FB7ADDC00A31A27 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 40C7B0C21FB7ADDC00A31A27 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		40C7B0D21FB7E62300A31A27 /* FishDetailStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7B0D11FB7E62300A31A27 /* FishDetailStackView.swift */; };
+		40B0E6851FB8F55100F88AF8 /* FishDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B0E6841FB8F55100F88AF8 /* FishDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,28 +36,7 @@
 			remoteGlobalIDString = 40A26BE21FB285E000FCE0DC;
 			remoteInfo = kelp;
 		};
-		40C7B0CA1FB7ADDC00A31A27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40A26BDB1FB285E000FCE0DC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 40C7B0C11FB7ADDC00A31A27;
-			remoteInfo = ShareExtension;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		40C7B0D01FB7ADDC00A31A27 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				40C7B0CC1FB7ADDC00A31A27 /* ShareExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40A26BE31FB285E000FCE0DC /* kelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +56,8 @@
 		40A26C161FB2874500FCE0DC /* KelpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KelpTableViewCell.swift; sourceTree = "<group>"; };
 		40A26C171FB2874500FCE0DC /* KelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KelpTableViewController.swift; sourceTree = "<group>"; };
 		40A26C1C1FB28DB900FCE0DC /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = SOURCE_ROOT; };
+		40B0E6841FB8F55100F88AF8 /* FishDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailTableViewCell.swift; sourceTree = "<group>"; };
 		40C7B0C21FB7ADDC00A31A27 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		40C7B0D11FB7E62300A31A27 /* FishDetailStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,11 +122,11 @@
 				40A26C151FB2874500FCE0DC /* KelpViewController.swift */,
 				40A26BE61FB285E000FCE0DC /* AppDelegate.swift */,
 				40A26BE81FB285E000FCE0DC /* FishDetailViewController.swift */,
-				40C7B0D11FB7E62300A31A27 /* FishDetailStackView.swift */,
 				40A26BEA1FB285E000FCE0DC /* Main.storyboard */,
+				40B0E6841FB8F55100F88AF8 /* FishDetailTableViewCell.swift */,
 				40A26BED1FB285E000FCE0DC /* Assets.xcassets */,
-				40A26BEF1FB285E000FCE0DC /* LaunchScreen.storyboard */,
 				40A26BF21FB285E000FCE0DC /* Info.plist */,
+				40A26BEF1FB285E000FCE0DC /* LaunchScreen.storyboard */,
 			);
 			path = kelp;
 			sourceTree = "<group>";
@@ -181,12 +159,10 @@
 				40A26BDF1FB285E000FCE0DC /* Sources */,
 				40A26BE01FB285E000FCE0DC /* Frameworks */,
 				40A26BE11FB285E000FCE0DC /* Resources */,
-				40C7B0D01FB7ADDC00A31A27 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				40C7B0CB1FB7ADDC00A31A27 /* PBXTargetDependency */,
 			);
 			name = kelp;
 			productName = kelp;
@@ -336,11 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B0E6851FB8F55100F88AF8 /* FishDetailTableViewCell.swift in Sources */,
 				40A26BE91FB285E000FCE0DC /* FishDetailViewController.swift in Sources */,
 				40A26C1A1FB2874500FCE0DC /* KelpTableViewCell.swift in Sources */,
 				40A26C1D1FB28DB900FCE0DC /* Fish.swift in Sources */,
 				40A26C1B1FB2874500FCE0DC /* KelpTableViewController.swift in Sources */,
-				40C7B0D21FB7E62300A31A27 /* FishDetailStackView.swift in Sources */,
 				40A26C191FB2874500FCE0DC /* KelpViewController.swift in Sources */,
 				40A26BE71FB285E000FCE0DC /* AppDelegate.swift in Sources */,
 			);
@@ -381,11 +357,6 @@
 			isa = PBXTargetDependency;
 			target = 40A26BE21FB285E000FCE0DC /* kelp */;
 			targetProxy = 40A26C031FB285E000FCE0DC /* PBXContainerItemProxy */;
-		};
-		40C7B0CB1FB7ADDC00A31A27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 40C7B0C11FB7ADDC00A31A27 /* ShareExtension */;
-			targetProxy = 40C7B0CA1FB7ADDC00A31A27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,10 +492,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z56RKB75SN;
+				DEVELOPMENT_TEAM = 3385Q85376;
 				INFOPLIST_FILE = kelp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jacque-DesMarais.kelp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,10 +507,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z56RKB75SN;
+				DEVELOPMENT_TEAM = 3385Q85376;
 				INFOPLIST_FILE = kelp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Jacque-DesMarais.kelp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jacque-DesMarais.kelp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
